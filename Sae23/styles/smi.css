@@ -1,0 +1,229 @@
+/* Feuille de style : SMI */
+
+html    /* Style � appliquer sur l'ensemble du document */
+{ 
+  margin: 0;
+  padding: 0;
+  background: url(../images/smi5.jpg) no-repeat center fixed; 
+  background-size: cover; /* version standardis�e */
+}
+
+body   /* Style � appliquer sur l'ensemble du corps du document */
+{
+  margin-right: 5%;             /* Gestion des marges lat�rales */
+  margin-left: 5%;
+}
+
+h1    /* Style � appliquer sur les titres h1 */
+{
+  background-color: rgba(255,255,255,0.35);
+  text-align: center;
+  color:  #0D4D4D;      
+  font-size: 2.25em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+em
+{
+  color: white;
+  font-size: 1.25em;
+ }
+
+label
+{
+  color: black;
+  font-family: Arial, sans-serif;
+ }
+
+header
+{
+  text-align: center;
+  clear: both;
+}
+p     /* Style � appliquer sur les paragraphes */
+{
+  font-family: Arial, sans-serif;
+  color: #AD0000;      /* Couleur de texte : ocre */
+  text-indent: 3%;
+}
+p.erreur
+{
+  font-weight: bold;
+  color: white;
+}
+/* Gestion des hyperliens */
+a:link
+{
+  color: #184A18;
+}
+a:visited
+{
+  color: #520031;
+}
+a:hover
+{
+  color: white;
+  background: green;
+}
+a:active
+{
+  color: black;
+}
+legend
+{
+  color: #0D4D4D;
+  font-family: Arial, sans-serif;
+}
+form
+{
+  width: 66%;
+}
+fieldset.gauche
+{
+  width: 50%;
+  color: black ;
+  font-family: Arial, sans-serif;
+  float: left;
+}
+div.valid
+{
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+div.tablo 
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+}
+div.tablo ul
+{
+  background-color: silver; 
+  text-align: left;
+  border-bottom: 2px solid gray;
+}
+div.tablo li
+{
+  list-style-type: none;
+  margin-left: 10px;
+  display: inline;
+}
+div.tablo li:first-child
+{
+  font-style: normal;
+  font-size: larger;
+}
+div.tablo li:last-child
+{
+  font-style: normal;
+  font-size: larger;
+  color:#0D4D4D;
+  position: absolute;
+  left: 400px;
+}
+footer
+{
+  background-color: rgba(255,255,255,0.75); 
+  text-align: center;
+  position: relative;
+  top: 5px;
+  padding: 5px;
+}
+div.ajout
+{
+  color: #0D4D4D;
+  font-family: Arial, sans-serif;
+}
+img{
+	border:0;
+	width:720px;
+	height:360px
+}
+@media screen and (max-width: 780px) 
+{
+	h1
+	{
+		font-size: 1.8em;
+	}
+	
+	nav ul li 
+	{
+		float: none;
+		width: 100%;
+		border-right: none;
+	}
+
+	nav ul li a 
+	{
+		padding: 1px;
+	}
+
+	section#first 
+	{
+		padding-top: 50px;
+	}
+	
+	section 
+	{
+		padding-top: 5px;
+		padding-right: 15px;
+	}
+	.image-responsive 
+	{
+		max-width: 100%;
+		height: auto;
+    }
+}
+
+/* max-width pour fortes résolutions */
+@media screen and (min-width: 1280px) 
+{
+
+
+	nav
+	{
+	   position:fixed;
+	   top:0px; 
+	   width: 225px;
+	   float: left;
+	   height: 100%;
+	   background-color: #888888;
+	}
+
+	nav ul li a 
+	{
+	  display: block;
+	  width: 225px;
+	  float: left;
+	  color: white;
+	  text-align: left;
+	}
+	
+	section 
+	{
+	  float: right;	
+	  width: 80%;
+	  padding-bottom: 10px;
+	  padding-right:1%;
+	}
+
+	section#first 
+	{
+	  padding-top:135px;
+	}
+
+	aside#last 
+	{
+	  float: right;	
+	  width: 80%;
+	  padding-top: 25px;
+	  padding-bottom: 90px;
+	  padding-right:1%;
+	}
+	
+	footer 
+	{
+	  clear: both;
+	}
+}
