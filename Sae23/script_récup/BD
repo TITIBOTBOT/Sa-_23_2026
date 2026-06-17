@@ -1,0 +1,4 @@
+E208	temperature_AM107-38	temperature		°C
+E208	humidity_AM107-38		humidity		%
+E208	co2_AM107-38			co2				ppm
+E208	pressure_AM107-38		pressure		hPa
